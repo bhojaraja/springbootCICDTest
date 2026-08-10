@@ -19,7 +19,7 @@ public class HelloControllerTest {
     public void testHelloEndpoint() throws Exception {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello from Spring Boot!"));
+                .andExpect(content().string("welcome to  from Spring Boot!"));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class HelloControllerTest {
         mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
-                .andExpect(content().string("Hello from Spring Boot!"));
+                .andExpect(content().string("welcome to  from Spring Boot!"));
     }
 
     @Test
