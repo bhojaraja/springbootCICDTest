@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "welcome to  from Spring Boot!";
+        return "welcome to  from Spring Boot CICD App!";
     }
     
 }
